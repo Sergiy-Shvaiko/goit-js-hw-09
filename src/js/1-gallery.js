@@ -67,7 +67,7 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
+const galleryCreate = document.querySelector('.gallery');
 
 function imageTemplate(image) {
   return `
@@ -86,7 +86,7 @@ function imagesTemplate(images) {
 }
 
 const markup = imagesTemplate(images);
-gallery.innerHTML = markup;
+galleryCreate.innerHTML = markup;
 
 let gallery = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
